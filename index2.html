@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="index2.css">
+    <body>
+        <nav>
+            <a href="index.html">E-Learning</a>
+            <a href="index1.html">Home</a>
+            <a href="index3.html">quiz</a>
+          </nav>
+    <div class="container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button class="btn" type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="signup-link">Signup</a></p>
+        </div>
+    
+        <div class="container" id="signup-container" style="display: none;">
+            <h2>Signup</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button class="btn" type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+    
+        <script>
+            const loginLink = document.getElementById('signup-link');
+            const signupLink = document.getElementById('login-link');
+            const loginContainer = document.querySelector('.container');
+            const signupContainer = document.getElementById('signup-container');
+    
+            loginLink.addEventListener('click', () => {
+                loginContainer.style.display = 'none';
+                signupContainer.style.display = 'block';
+            });
+    
+            signupLink.addEventListener('click', () => {
+                signupContainer.style.display = 'none';
+                loginContainer.style.display = 'block';
+            });
+        </script>
+    </body>
+    </html>
