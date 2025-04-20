@@ -1,0 +1,91 @@
+ody {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: image("back.jpg");
+    color: #333;
+    background-color: black;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+  
+    background-color: gray;
+    color:black;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin: 3px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: auto;
+    margin-right: 7px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    padding: 10px;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color:black;
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('image1.avif') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  }
+  
+  .btn {
+    background-color: gray;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color:skyblue;
+  }
